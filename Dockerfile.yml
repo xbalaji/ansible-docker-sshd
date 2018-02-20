@@ -1,0 +1,21 @@
+
+image: "ubuntu"
+version: "16.04"
+target: "ubsshd"
+eg_container: "ub01"
+
+author: "Balaji Venkataraman"
+email: "xbalaji@gmail.com"
+
+root_password: 'ubuntu'
+#root_ssh: 'yes'
+
+users:
+  - { id: "user1", pass: "user1pass" }
+  - { id: "user2", pass: "user2pass" }
+
+labels:
+  - {"Description": "A container environment for ansible, with sshd and remote login" }
+  - {"Author": "Balaji Venkataraman" }
+  - {"email": "xbalaji@gmail.com" }
+
