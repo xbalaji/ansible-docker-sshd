@@ -29,7 +29,7 @@
 
 ################## start: Dockerfile  ###################
 
-FROM ubuntu
+FROM ubuntu:latest
 LABEL Description="A container environment for ansible, with sshd and remote login"
 LABEL Author="Balaji Venkataraman"
 LABEL email="xbalaji@gmail.com"
@@ -45,6 +45,9 @@ RUN useradd -m -s /bin/bash user1 && \
 RUN useradd -m -s /bin/bash user2 && \
     usermod -aG sudo user2 && \
     echo 'user2:user2pass' | chpasswd
+RUN useradd -m -s /bin/bash ansibleuser && \
+    usermod -aG sudo ansibleuser && \
+    echo 'ansibleuser:ansiblepass' | chpasswd
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]

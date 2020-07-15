@@ -13,6 +13,7 @@ root_password: 'ubuntu'
 users:
   - { id: "user1", pass: "user1pass" }
   - { id: "user2", pass: "user2pass" }
+  - { id: "ansibleuser", pass: "ansiblepass" }
 
 labels:
   - {"Description": "A container environment for ansible, with sshd and remote login" }
