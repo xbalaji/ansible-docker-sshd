@@ -1,6 +1,6 @@
 
 image: "ubuntu"
-version: "16.04"
+version: "latest"
 target: "ubsshd"
 eg_container: "ub01"
 
