@@ -29,7 +29,7 @@
 
 ################## start: Dockerfile  ###################
 
-FROM ubuntu:16.04
+FROM ubuntu
 LABEL Description="A container environment for ansible, with sshd and remote login"
 LABEL Author="Balaji Venkataraman"
 LABEL email="xbalaji@gmail.com"
