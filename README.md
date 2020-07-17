@@ -7,8 +7,8 @@ pip install j2cli[yaml]
 ```
 
 ### modify the yml file to add any additional users, details etc and execute
-```
-bash j2 Dockerfile.j2 Dockerfile.yml -o Dockerfile
+```bash
+j2 Dockerfile.j2 Dockerfile.yml -o Dockerfile
 ```
 
 ### The usage is also available in the output Dockerfile
